@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  li {
+    @apply cursor-pointer;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+}
+
+.muiLabel label[data-shrink="true"] {
+  font-size: 16px;
+}
+
+.muiLabel label[data-shrink="false"] {
+  top: -8px;
+  font-size: 12px;
+}
+.muiSelect label[data-shrink="true"] {
+  font-size: 16px !important;
+}
+
+.muiSelect  label[data-shrink="false"] {
+  font-size: 12px !important;
+}
+
+.muiSelect .MuiOutlinedInput-input{
+  font-size: 12px;
+}
